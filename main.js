@@ -29,3 +29,26 @@ document.querySelector("#cards").innerHTML =
       createGame("switzerland", "13:00", "brazil") +
       createGame("portugal", "16:00", "uruguai")) +
     createCard("02/12", "sexta", createGame("brazil", "16:00", "cameroon"))
+
+
+
+let mainColor = document.getElementById("bo");
+
+let dotYellow = document.getElementById("dot-yellow").addEventListener('click', function(){
+  mainColor.classList.remove('blue');
+  mainColor.classList.remove('green');
+  mainColor.classList.toggle('yellow')
+});
+
+let dotGreen = document.getElementById("dot-green").addEventListener('click', function(){
+  mainColor.classList.remove('blue');
+  mainColor.classList.remove('yellow');
+  mainColor.classList.toggle('green');
+});
+
+let dotBlue = document.getElementById("dot-blue").addEventListener('click', function(){
+  mainColor.classList.remove('green');
+  mainColor.classList.remove('yellow');
+  mainColor.classList.toggle('blue');
+});
+

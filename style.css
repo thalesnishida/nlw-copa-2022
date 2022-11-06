@@ -57,6 +57,42 @@ header {
   text-align: center;
 }
 
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.dots div {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  transition: .3s;
+}
+
+.dots div:hover{
+  transform: scale(1.1);
+}
+
+.dots div:nth-child(1){
+  background: yellow;
+}
+.dots div:nth-child(2){
+  background: blue;
+}
+
+.dots div:nth-child(3){
+  background: rgb(125, 209, 0);
+
+}
+
+
 #cards {
   display: flex;
   flex-direction: column;
