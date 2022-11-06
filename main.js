@@ -22,14 +22,26 @@ function createCard(date, day, games) {
 }
 
 document.querySelector("#cards").innerHTML = 
-    createCard("24/11", "quinta", createGame("brazil", "16:00", "serbia")) +
+    createCard("24/11", "segunda", 
+    createGame("brazil", "16:00", "serbia") + 
+    createGame("cameroon", "7:00", "switzerland") + 
+    createGame("portugal", "20:00", "ghana")) +
     createCard(
       "28/11",
       "segunda",
       createGame("switzerland", "13:00", "brazil") +
+      createGame("serbia", "7:00", "cameroon") + 
       createGame("portugal", "16:00", "uruguai")) +
-    createCard("02/12", "sexta", createGame("brazil", "16:00", "cameroon"))
+      
+    createCard("02/12", "sexta", 
+    createGame("japan", "17:00", "portugal") +
+    createGame("switzerland", "18:00", "serbia") +
+    createGame("uruguai", "16:00", "british-columbia")) +
 
+    createCard("02/12", "sexta", 
+    createGame("brazil", "6:00", "cameroon") +
+    createGame("argentina", "7:00", "serbia") +
+    createGame("uruguai", "16:00", "portugal")) 
 
 
 let mainColor = document.getElementById("bo");
