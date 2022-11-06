@@ -49,18 +49,18 @@ let mainColor = document.getElementById("bo");
 let dotYellow = document.getElementById("dot-yellow").addEventListener('click', function(){
   mainColor.classList.remove('blue');
   mainColor.classList.remove('green');
-  mainColor.classList.toggle('yellow')
+  mainColor.classList.add('yellow')
 });
 
 let dotGreen = document.getElementById("dot-green").addEventListener('click', function(){
   mainColor.classList.remove('blue');
   mainColor.classList.remove('yellow');
-  mainColor.classList.toggle('green');
+  mainColor.classList.add('green');
 });
 
 let dotBlue = document.getElementById("dot-blue").addEventListener('click', function(){
   mainColor.classList.remove('green');
   mainColor.classList.remove('yellow');
-  mainColor.classList.toggle('blue');
+  mainColor.classList.add('blue');
 });
 
